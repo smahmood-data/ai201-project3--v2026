@@ -44,7 +44,8 @@
 
 For Milestone 1, I chose the public `r/boardgames` community. I will collect
 public posts with enough variation in recommendation, rules, strategy, and
-experience-based discussion to classify how substantial the post is.
+experience-based discussion to classify the kind of contribution each post
+makes.
 
 Candidate distinctions from reading the community:
 
@@ -69,33 +70,67 @@ Candidate distinctions from reading the community:
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `detailed_request`
 
-**Definition:**
+**Definition:** Primarily asks for help or recommendations and gives at least
+two concrete constraints, examples, or requirements that another person could
+use to tailor an answer.
 
-**Example 1:**
->
+**Example 1:** The post asking for a medium-weight game for three or four
+players specifies player interaction, acceptable complexity, and dislike of
+three-hour solitaire play. ([source](https://www.reddit.com/r/boardgames/comments/1w8mprb/))
 
-**Example 2:**
->
+**Example 2:** The travel-game request specifies two players, easy rules,
+small size, and existing games the author likes and dislikes.
+([source](https://www.reddit.com/r/boardgames/comments/1w8mprb/))
 
-### `label_two`
+### `reasoned_advice`
 
-**Definition:**
+**Definition:** Makes a recommendation, evaluation, or explanation and
+supports it with specific mechanics, rules, firsthand outcomes, or a concrete
+comparison.
 
-**Example 1:**
->
+**Example 1:** The reply comparing *Castles of Burgundy* and *Grand Austria
+Hotel* distinguishes their component quality, rulebook demands, punishment,
+theme, and solo modes. ([source](https://www.reddit.com/r/boardgames/comments/1wc9dhg/))
 
-**Example 2:**
->
+**Example 2:** The reply recommending *Sniper Elite* explains its complexity,
+beginner map, difficulty settings, and which player should take the hider role.
+([source](https://www.reddit.com/r/boardgames/comments/1wc9dhg/))
+
+### `brief_reaction`
+
+**Definition:** Gives a short opinion, reaction, or list with no supporting
+mechanic, rule, comparison, or firsthand detail.
+
+**Example 1:** The reply “Lost Cities, baby!” names a game but gives no reason
+or supporting detail. ([source](https://www.reddit.com/r/boardgames/comments/1wc9dhg/))
+
+**Example 2:** The reply “Bohnanza, Startups” supplies two recommendations
+without explaining why they fit the request.
+([source](https://www.reddit.com/r/boardgames/comments/1w8mprb/))
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `detailed_request` and `reasoned_advice`
 
-**The decision rule I used every time:**
+**The decision rule I used every time:** If the post contains at least one
+specific supporting reason—such as a mechanic, rule, comparison, or firsthand
+result—and its primary purpose is to answer or evaluate, it is
+`reasoned_advice`. If its primary purpose is to ask for help, it is
+`detailed_request` even when the author gives reasons. If it only names an
+opinion or recommendation without support, it is `brief_reaction`.
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
+
+### Boundary stress test
+
+I asked an AI tool to generate eight borderline examples using these
+definitions. The rule above classified each one cleanly: four examples that
+named a mechanic or outcome were `reasoned_advice`, and four that only named a
+game or preference were `brief_reaction`. I tightened “support” to require a
+specific mechanic, rule, comparison, or firsthand result rather than general
+positive adjectives such as “great” or “fun.”
 
 
 
