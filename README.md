@@ -42,6 +42,21 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
+For Milestone 1, I chose the public `r/boardgames` community. I will collect
+public posts with enough variation in recommendation, rules, strategy, and
+experience-based discussion to classify how substantial the post is.
+
+Candidate distinctions from reading the community:
+
+- Some posts give specific constraints such as player count, play time,
+  complexity, budget, or space; others ask for general recommendations.
+- Some posts provide detailed personal context and examples of games already
+  enjoyed; others provide only a short title or vague preference.
+- Some replies explain their reasoning using mechanics, difficulty,
+  interaction, or replayability; others only list game names.
+- Some posts report firsthand experience, including what worked or failed;
+  others rely on reviews, rumors, or assumptions.
+
 
 
 ---
