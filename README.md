@@ -143,17 +143,25 @@ positive adjectives such as “great” or “fun.”
 
 **Where the posts came from:**
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+I collected 200 public posts from `r/boardgames` using two public Reddit JSON
+feed pages. The full post text was kept in `labels.csv`, including the title
+where available.
+
+**How I labelled them:**
+
+I used the taxonomy above to label the posts with AI assistance, then reviewed
+the generated labels against the definitions. The first 20 rows are marked for
+cold review, but that review still needs to be completed independently by me;
+they are not being represented as cold labels yet.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `detailed_request` | 34 | 17.0% |
+| `reasoned_advice` | 72 | 36.0% |
+| `brief_reaction` | 94 | 47.0% |
+| **Total** | **200** | **100%** |
 
 **Three hard cases**
 
@@ -161,25 +169,31 @@ Say so plainly — the disclosure is required, not penalised. -->
      been, and what you chose. These are worth more than the easy 190. -->
 
 **1.**
-> *The post:*
+> *The post:* A post asking whether a long, detailed collection-building post
+> should be treated as a request for recommendations or as advice.
 >
-> *Could have been:*
+> *Could have been:* `detailed_request` or `reasoned_advice`
 >
-> *I chose, because:*
+> *I chose, because:* I used `detailed_request` when the primary purpose was
+> asking others for tailored suggestions, even if the author included reasons.
 
 **2.**
-> *The post:*
+> *The post:* A rules question that explains a specific game situation and
+> asks how the rule should be applied.
 >
-> *Could have been:*
+> *Could have been:* `reasoned_advice` or `brief_reaction`
 >
-> *I chose, because:*
+> *I chose, because:* The concrete rules and situation make it supported
+> reasoning rather than an unsupported short reaction.
 
 **3.**
-> *The post:*
+> *The post:* A short post naming a game and asking whether others have tried
+> it, with little additional detail.
 >
-> *Could have been:*
+> *Could have been:* `brief_reaction` or `detailed_request`
 >
-> *I chose, because:*
+> *I chose, because:* It does not provide at least two concrete constraints or
+> examples, so it remains `brief_reaction`.
 
 ---
 
@@ -212,17 +226,32 @@ of next unit's variance. -->
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I asked an AI tool to apply my three boardgames labels to
+  the collected public posts using the written definitions.
+- *What came back:* It produced an initial label for each post, but the first
+  pass showed that recommendation questions and supported advice were easy to
+  confuse.
+- *What I changed:* I checked the labels against the decision rule, kept the
+  primary-purpose distinction between `detailed_request` and
+  `reasoned_advice`, and marked the first 20 rows for a separate cold review.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I asked the AI tool to inspect the training setup and run
+  the notebook on the completed CSV.
+- *What came back:* The notebook was configured with the starter taxonomy
+  (`analysis`, `hot_take`, `reaction`) instead of my project labels, so the
+  dataset check would have rejected the CSV.
+- *What I changed:* I replaced the notebook label map with
+  `detailed_request`, `reasoned_advice`, and `brief_reaction`, then reran the
+  notebook and verified the generated results and test split.
 
 **Pre-labelling disclosure:**
+
+AI assistance was used to pre-label the 200-post batch. The labels were
+reviewed against the written taxonomy, but the required 20-post independent
+cold-label pass has not yet been completed; those rows are explicitly marked
+for cold review in `labels.csv`.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
