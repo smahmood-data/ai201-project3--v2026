@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.3333333333333333,
+    "f1_macro": 0.1666666666666667,
+    "per_label": {
+      "brief_reaction": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 14
+      },
+      "detailed_request": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5
+      },
+      "reasoned_advice": {
+        "precision": 0.3448275862068966,
+        "recall": 0.9090909090909091,
+        "f1": 0.5000000000000001,
+        "support": 11
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "Does anyone have any tips for running a more complex social deduction game?\n\nI recently received a new social deduction game, Possess Me Satan! I plan to host a game night to play it, but my experience with these games are limited to moderating/playing Werewolf, playing Secret Hitler, and watching a few hours of Blood on the Clocktower.\n\nI feel like BotC is the most similar game, and so I will be watching a bit more of that in preparation.\n\nHowever, I wanted to ask if anyone had any advice or suggestions to help prepare?\n\nPerhaps some accessories I could 3D-print to make things go more smoothly?\n\nThanks everyone!",
+      "gold": "detailed_request",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "My customized version of War of the Ring!",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Rivervalley or Verdant\n\nIm tore between these two? Which board games should I get.  \nThey both look really pretty but which one do you recommend if you had to pick one",
+      "gold": "reasoned_advice",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Shout-out to Stonemeier games for customer support.\n\nI had, for years, been spending far too much on far too many games, a disease not entirely unheard of in our gaming circle. \n\nOne game I picked up along the way was Viticulture essential, because medium weight 6 player games are at a premium for my group, and it looked like we might enjoy it. \n\nAnd we did...when we finally played it last month...a full decade after it was purchased.\n\nWhich is also when we happened to discover that the game was missing the green rooster, instead coming with two large green cellars.\n\nSo after game day I reached out to SMG and asked if there was any way at all to perhaps get said rooster. I mean, it's not like I was expecting anything from them, it has been over a decade for heaven's sake.\n\nTo my surprise and delight, less than two weeks later, a green rooster showed up in my mailbox.\n\nThis is remarkable from a customer service perspective. A decade!\n\nIn retaliation, I immediately purchased Tuscany and Moor and the extra workers and the metal coins for the game. That'll show em...how much I appreciate them.\n\nThank you, Dave at SMG. \n\nY'all are a class act.",
+      "gold": "detailed_request",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Would you use a platform to contact board game publishers and pitch your games?\n\nHi everyone! I\u2019m thinking about building a platform that brings together board game designers and publishers, and I\u2019d like to understand whether it would solve a real problem.\n\nThe idea is to have a publisher database with contact details, the types of games they\u2019re looking for, and submission guidelines. Designers could upload their sell sheets and submit them to publishers accepting pitches, keeping track of what they sent, to whom, when, and any responses they received.\n\nI\u2019d also like it to be useful at conventions, for submitting games and scheduling meetings without having to start over on a different platform for each event. The goal would be to keep everything in one place, rather than scattered across emails, attachments, and event-specific apps.\n\nThe ambition is for it to become a widely adopted resource within the industry. Obviously, the hardest part would be getting publishers on board.\n\nFor anyone who has pitched a game or works in publishing: would a platform like this make sense? How do you currently manage these contacts, and what difficulties do you run into? What would make you want to use it?\n\nI intend to build it, but first I\u2019d like to hear from potential users and understand what\u2019s actually missing from the tools available today.",
+      "gold": "reasoned_advice",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Please help me identify a board game\n\nWe were a bunch of really drunk students at a party and this guy decided to whip out his favourite board game and teach it to a bunch of randos. I do not have much experience with board games besides the usual ones you come in contact with when growing up (like Catan etc.)\n\nWhat I remember:\n\n* The board was huge. Like the table was too small for it. It was a large map.\n* You had to conquer countries like in Risk, but no dice\n* It hat phases (?). You had to decide what to do and place it on the board, but covered\n* There was lots of betraying and shouting, like \"Who are you? I dont know you. I thought we were friends.\"\n* We only managed one round during the course of the evening. But that might be because we might have been much slower than intended. (And because one guy got really emotional and was really pissed about being backstabbed last minute and didn't speak to me the next days.)\n\nI'm really sorry, I know this isn't much to go on, but hopefully, you guys can point me in the right direction with a few suggestions. Seeing the right game might just jog my memory.\n\n  \nEdit: it was 15 years ago",
+      "gold": "reasoned_advice",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Have you ever regretted getting rid of an Expansion box?\n\nCleaning yesterday I broke down and recycled about dozen game expansion boxes I had been saving for years \"just in case\". There never was a just in case and it felt good to finally get rid of them (I did take photos of each before to to save the art and info on the game boxes). \n\nI have been better about getting rid of expansion as I unpack new ones (assuming the content fits in the original game box) but these had been hanging around taking up space for no real reason.\n\n  \nI am wondering if anyone has ever gotten rid of an expansion box and then for some reason later thought, \"Oh no, I wish I still had that.\" Has that ever happened to you? Did you ever regret getting rid of an expansion box?",
+      "gold": "reasoned_advice",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Do you ever look at the sheer ammount of trackers and just instantly pass on a game?\n\nI notice this a LOT now with new games, and especially games on kickstarter.  A game will cover an ENTIRE table, and have 2-3 chip board cards just for tracking various resources.   For example, the \"battle for roshar\" game on kickstarter atm.   I looked at the game because it is based on the stormlight archive, but i am going to pass because there is just too much.  Years ago I got the frost grave game, and played it once before letting it collect dust, because it is too much work to track and honestly, its too much work to take out of the box.  \n\nWhat are some good games coming out that are complex, but not at the cost of a million little trackers?",
+      "gold": "reasoned_advice",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Can the yellow army attack the blue army in Ontario from Greenland?",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Daily Game Recommendations Thread (November 04, 2026)\n\n**Welcome to /r/boardgames's Daily Game Recommendations**\n\nThis is a place where you can ask any and all questions relating to the board gaming world including but not limited to[:](https://en.wiktionary.org/wiki/meeple#/media/File:Carcassonne_Miples.jpg)\n\n* general or specific game recommendations\n* help identifying a game or game piece\n* advice regarding situation limited to you (e.g, questions about a specific FLGS)\n* rule clarifications\\n* and other quick questions that might not warrant their own post\n\n## Asking for Recommendations\n\nYou're much more likely to get good and personalized recommendations if you take the time to format a well-written ask. We **highly recommend** using [this template](/r/boardgames/wiki/personalized-game-recommendation-template-no-explainer) as a guide. [Here is a version](/r/boardgames/wiki/personalized-game-recommendation-template) with additional explanations in case the template isn't enough.\n\n## Bold Your Games\n\nHelp people identify your game suggestions easily by making the names **bold**.\n\n## Additional Resources\n\n* See our series of [Recommendation Roundups](/r/boardgames/?f=flair_name%3A\\\"Recommendation%20Roundup\\\") on a wide variety of topics people have already made game suggestions for.\n* If you are new here, be sure to check out our [Community Guidelines](/r/boardgames/wiki/community)\n* For recommendations that take accessibility concerns into account, check out [MeepleLikeUs](https://meeplelikeus.co.uk/recommender-beta/) and their recommender.",
+      "gold": "reasoned_advice",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Camel Up - Mold? in Track Map\n\nI bought a second hand copy of Camel Up Second Edition, after checking the backside of the track I saw small white spots. Is this some kind of mold? or it's just the paint rubbing off?",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "We often talk about good gateway games, but what would be a great getaway game?\n\nYou know, like in a getaway car.",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Moon Colony, clay model.\n\na friend made me this 15 cm clay model of the fabulous robot as it is featured on the box of Moon Colony. There are floodlights in the base and if you place the robot on top of base, its eyes light up. I Love it! What do you think?",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Emberleaf and Skyrim ambiance \ud83c\udf83\ud83d\udc96",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Is there such thing as board games in \u201cbook format\u201d?\n\nAre there any board games that come in book format? Let\u2019s say some kind of adventure game you play only with a book? Or a book and a deck of cards? No dice preferably.\n\nI\u2019m spending time somewhere where I can\u2019t bring physical boardgames but can get books and playing cards.\n\nHope this can be considered outside game request. As I am asking if a certain style or format exists. And not a particular suggestion. If there\u2019s a different sub for such games, please let me know.",
+      "gold": "reasoned_advice",
+      "predicted": "brief_reaction"
+    },
+    {
+      "text": "[iOS/Android] Castle Combo Digital version available\n\nHi r/boardgames!\n\nI\u2019m one of the developers at a small studio that adapts board games to mobile. The mods kindly gave me the OK to share this here (Thank you!). \n\nWe previously released the digital version of Witchcraft!, and we\u2019ve just launched our second adaptation: the official digital version of **Castle Combo**, the card drafting and tableau-building game by Catch Up Games (designed by Gr\u00e9gory Grard &amp; Mathieu Roussel, illustrated by St\u00e9phane Escapa).\n\nThis time, we didn\u2019t want to just port it over as-is, so we put a lot of work into creating a **solo campaign** that offers a different way to enjoy the game, and we built different bot challenges so it still works great when you don\u2019t have people around to play with.\n\nIt\u2019s only been out for a few days, and there\u2019s still plenty of room to grow. We\u2019re hoping to add the expansions soon, and to keep expanding it with more campaigns and bots if people enjoy it.\n\nIf you\u2019re a fan of the physical game, I\u2019d especially love to hear how the adaptation feels compared to playing at the table. Happy to answer any questions about the game or about the process of adapting it!\n\niOS: [https://apps.apple.com/us/app/castle-combo/id6798749152](https://apps.apple.com/us/app/castle-combo/id6798749152)  \nAndroid: [https://play.google.com/store/apps/details?id=com.mantitagames.castlecombo&amp;pcampaignid=web\\_share](https://play.google.com/store/apps/details?id=com.mantitagames.castlecombo&amp;pcampaignid=web_share)\n\nThanks for reading!",
+      "gold": "detailed_request",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Anyone Recognize The Game?\n\nWhoops forgot the banana, but if it was there it'd be huge. The pictures are about finger nail size.\n\nI found these in a bag in a box that I haven't opened in over 10 years. Any help would be appreciated.",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "I made Flash of Fury, a free 2-Player print and play fighter game available!\n\nHello everyone!\n\nThe other day I posted a free 18 card solo dungeon crawler I made and seeing some people get excited about it really felt good! \n\nI wanted to make my other game I created free for people to play as well.\n\nIt's called Flash of Fury and it is a 2-player card game. Fight head-to-head like in your favorite 2D fighter with your friend! This game fits on just 18 cards. \n\nYou will use combat cards to hit, throw, and block your opponent, to be the first to score all 4 points in a tug-of war style scoring system.\n\nIt is available to print and play for free here if you would like:\n\n[https://destrucsean.itch.io/flash-of-fury](https://destrucsean.itch.io/flash-of-fury)\n\nHere is a short trailer showing how to game works:\n\n[https://www.youtube.com/watch?v=PaXvvVjGCAU](https://www.youtube.com/watch?v=PaXvvVjGCAU)\n\nAlso if you the solo dungeon crawler I mentioned above sounds interesting to you you can check it out in my original post here:\n\n[https://www.reddit.com/r/boardgames/comments/1xgryly/comment/19rszcpsxtrl0/?context=3](https://www.reddit.com/r/boardgames/comments/1xgryly/comment/19rszcpsxtrl0/?context=3)\n\nThank you and have fun!",
+      "gold": "detailed_request",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Where did you get your board game shelf?\n\nMy board game collection is growing more and more and we don\u2019t have a dedicated shelf to organize them. I\u2019m planning on probably finding something on Facebook marketplace or something for an affordable shelf for my board games.\n\nWhere did you get your shelf to store your board games?",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "My month of gaming. 14 out of 31 days played. Entropy was the biggest letdown and My Father\u2019s Work was a surprise\n\nEntropy felt like the mechanics didn\u2019t fit the theme. They just felt generic. The game itself was ok, Worker placement with mitigations to resolve mini goals. There are a million little piles of tokens/components in this game too. \n\nMy Father\u2019s Work I owned for several years and never got around playing. I read that it was complicated and needed an app. Both scared me off back then. We decided to play this last week and overall we had a lot of fun. The App is mostly used to provide dialogue between the 3 rounds and also reveals a few decision results. Other games solve this with a book of secrets. The app could narrate more of the dialogue. And some of it could be a lot shorter but its easy enough to skip. The components are absolutely amazing. Glass vials, unique animal meeples, metal gears. And the dynamic story based worker placement spots are cool too. Whatever routine you used in round 1 might not be viable in round 2 because a spot went missing.",
+      "gold": "reasoned_advice",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "The Thing vs Feed the Kracken\n\nIn less than 7 days, both of these titles will be hitting Gamefound. The closest thing to a hidden traitor/social deduction-esque game in my collection is Fury of Dracula (unless you count Nemesis). Almost 10 years ago I came very close to buying Infection at Outpost 31. I\u2019ve loved The Thing since I was a kid, so I thought a board game of it could be very fun. Unfortunately I wasn\u2019t into modern board games at the time, much less having a larger game group to play it with, so I passed (and I was also not into board games when the newer The Thing board game came out). Today, I have a pretty consistent gaming friend group of 4 and I imagine we could expand it to some other friends a few times a year to make it 6-8, so buying one of these types of games no longer feels totally unreasonable, but The Thing has been out of print since my friends started playing board games. \n\nI\u2019ve also had Feed the Kraken on my potential list as it looks like a fun take on social deduction that doesn\u2019t rely on IP as much (because ultimately you want everyone to have fun in these games, not just the fans of the IP). That said, the IP of The Thing is super appealing. I know Pendragon is woefully behind on some campaigns, but I\u2019m hoping The Thing being a reprint helps de-risk the project some (though I do wonder why it even needs a crowdfunding at all vs print it and ship it to retail). Ultimately though, I want to get a game that will get tabled (as much as a larger player count game like this can reasonably be tabled) and for everyone to have a great time. \n\nQuestion is, for those of you that have / have played both, which do you prefer and why? If you were picking up only one, which one?",
+      "gold": "detailed_request",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Villianous storage box",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Identify this piece\n\nHey r/boardgames! Could you tell me which game this piece is from? Thank you!",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Cerco 8 entomologi\n\n\ud83e\udeb2 Cerco 8 giocatori per ogni luned\u00ec sera\n\nSto testando l'Arena online di Entomologists e mi servono giocatori veri.\n\nLe partite classiche durano 15 minuti: a quanto pare sono troppi, poche persone riescono a mantenere l'attenzione per pi\u00f9 di 10 minuti su un gioco di carte online.\n\nCos\u00ec ho creato Spedizione Occidentis: niente conteggio dei punti a fine partita, vince il primo che cattura 3 insetti specifici.\n\nIn questo modo una partita dura circa 4 minuti, riusciremo a battere la soglia di attenzione per un gioco che non ha esplosioni ed effetti speciali ma insetti? \n\n\ud83d\udd58 Arena aperta dalle 21:00 alle 22:30\n\nVi chiedo 3-4 partite: mi servono per testare gli accoppiamenti grazie! \n\n\u2705 Non si installa niente: si gioca da browser, PC o telefono\n\n\u2705 Accesso con Google\n\n\u2705 Tutorial iniziale di 40 secondi, poi si gioca\n\n\ud83d\udc49 app.entomologists.net\n\nFatemi sapere se l'idea dell'accorciare le partite pu\u00f2 avere senso, se invece volete giocare una partita intera con me sono sempre disponibile a spiegare il gioco nei punti dove servono chiarimenti.\n\nGrazie \ud83d\ude4f",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Bomb Busters Tile Grouping\n\nIn 2-player mode, the possibility of having 2 of a kind, or even 4 of a kind in one hand is very high. I could not find anything in the rules about spacing your tiles equally apart, so I was grouping same number tiles touching each other, and leaving a gap to the next number. Is this allowed? Frowned upon? Game mechanic?",
+      "gold": "reasoned_advice",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "You know\u2026I think I\u2019ll just not use talk to text anymore.\n\nOn a side note. Can anyone answer this question? Whats the easiest zombicide to play? Other than the introduction games like heroes resistance.",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Stifling Darkness question\n\nWhat is that symbol? The eye means you have to lower your paparazzi-meter in order to use the ability, the 1 and 2 mean the cooldown zone they go after use.\n\nBut what's the butcher symbol next to the eye in attack cards?",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Daily Game Recommendations Thread (November 03, 2026)\n\n**Welcome to /r/boardgames's Daily Game Recommendations**\n\nThis is a place where you can ask any and all questions relating to the board gaming world including but not limited to[:](https://en.wiktionary.org/wiki/meeple#/media/File:Carcassonne_Miples.jpg)\n\n* general or specific game recommendations\n* help identifying a game or game piece\n* advice regarding situation limited to you (e.g, questions about a specific FLGS)\n* rule clarifications\\n* and other quick questions that might not warrant their own post\n\n## Asking for Recommendations\n\nYou're much more likely to get good and personalized recommendations if you take the time to format a well-written ask. We **highly recommend** using [this template](/r/boardgames/wiki/personalized-game-recommendation-template-no-explainer) as a guide. [Here is a version](/r/boardgames/wiki/personalized-game-recommendation-template) with additional explanations in case the template isn't enough.\n\n## Bold Your Games\n\nHelp people identify your game suggestions easily by making the names **bold**.\n\n## Additional Resources\n\n* See our series of [Recommendation Roundups](/r/boardgames/?f=flair_name%3A\\\"Recommendation%20Roundup\\\") on a wide variety of topics people have already made game suggestions for.\n* If you are new here, be sure to check out our [Community Guidelines](/r/boardgames/wiki/community)\n* For recommendations that take accessibility concerns into account, check out [MeepleLikeUs](https://meeplelikeus.co.uk/recommender-beta/) and their recommender.",
+      "gold": "reasoned_advice",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Gamenerdz\n\nAnd go servers down...  (\n\n\nEdit: \nThey came back up 5 minutes later for me, got Agricola , Captains Chair , Compile 02 , and White Castle duel for a steal",
+      "gold": "brief_reaction",
+      "predicted": "reasoned_advice"
+    },
+    {
+      "text": "Kinfire Delve Vainglory\u2019s Grotto- am I missing something?\n\nI just got Vainglory\u2019s Grotto, and it was my first time playing a Kinfire Delve game and I played solo as Khor. I thought the cards were so pretty and the game mechanics were cool, but I\u2019m not sure if I\u2019m missing something because I beat it on my first try with 5 health and only one exhaustion card. Is the game really easy or am I missing something?\n\nIf you just keep using Tireless as your last card, you never have to pick up an exhaustion. I did probably get a bit lucky never rolls the black sphere when versing Vainglory, but still I feel I should have lost or at least been close to losing on my first game.\n\nAre there things to make it harder?",
+      "gold": "reasoned_advice",
+      "predicted": "reasoned_advice"
+    }
+  ]
+}

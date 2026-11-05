@@ -267,10 +267,11 @@ for cold review in `labels.csv`.
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.333 | 0.600 | +0.267 |
+| Macro F1 | 0.167 | 0.400 | +0.234 |
+| F1 — `brief_reaction` | 0.000 | 0.757 | +0.757 |
+| F1 — `detailed_request` | 0.000 | 0.000 | +0.000 |
+| F1 — `reasoned_advice` | 0.500 | 0.444 | -0.056 |
 
 **What I predicted before I looked:**
 
@@ -279,8 +280,12 @@ especially on `detailed_request`, because the fine-tuning data contains many
 community-specific examples of recommendation questions and their boundaries.
 
 **What the gap actually means:**
-<!-- If the baseline matched your trained model, your fine-tuning added
-     nothing — and that is a real finding, not a failure. Say it plainly. -->
+
+Fine-tuning substantially improved overall accuracy and recognition of
+`brief_reaction`, but it did not learn `detailed_request` and slightly reduced
+performance on `reasoned_advice`. The model learned the easiest short-reaction
+distinction, while the request/advice boundary remains unresolved and needs
+better-balanced, more consistently reviewed examples.
 
 
 
