@@ -446,7 +446,15 @@ staff taxonomy and examples were unusually cleanly separated.
 
 **What I changed:**
 
+I added 6 newly collected public `r/boardgames` posts to `labels.csv` using the
+same taxonomy. Three were `detailed_request`, increasing that label from 34 to
+37 examples; the other three were labelled under the existing rules. This was
+the only change.
+
 **Which diagnosis pointed at it:**
+
+`detailed_request` had F1 0.000 in all three before seeds and only 5 test
+examples in the split. The improvement targets that thin label directly.
 
 ### Run Log — After
 
