@@ -465,17 +465,18 @@ examples in the split. The improvement targets that thin label directly.
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1. Overall accuracy | ≥ 0.65 | pending | pending | pending | Not run |
-| 2. Per-label and macro F1 | Each ≥ 0.55; macro ≥ 0.60 | pending | pending | pending | Not run |
+| 1. Overall accuracy | ≥ 0.65 | 0.548 | 0.516 | 0.581 | MISSED |
+| 2. Per-label and macro F1 | Each ≥ 0.55; macro ≥ 0.60 | macro 0.328; detailed 0.000 | macro 0.279; detailed 0.000 | macro 0.386; detailed 0.000 | MISSED |
 | 3. Label balance | Each 15%–60% | 18% / 35% / 47% | 18% / 35% / 47% | 18% / 35% / 47% | Met |
 | 4. Staff agreement | ≥ 75% | 1.000 | 1.000 | 1.000 | Met |
 | 5. High-confidence accuracy | ≥ 0.80 and ≥ 0.10 gap | not measured | not measured | not measured | Not measurable |
 
 **Did it help, and how do I know:**
 
-The after retraining was not completed in this environment, so I cannot claim
-that the six-post addition helped. The change is committed, but the before/after
-model comparison remains unresolved.
+The change did not help. After accuracy fell to 0.516–0.581 from 0.533–0.633
+before, and `detailed_request` still had F1 0.000 in every seed. The added
+examples were too few to change the learned boundary and appear to have made
+the small test split noisier.
 
 
 
@@ -490,20 +491,23 @@ larger, independently reviewed batch of detailed recommendation requests and
 rerun all three seeds; I stopped after adding the six posts available in the
 provided JSON pages because the remaining posts were duplicates.
 
-The overall-accuracy and per-label-F1 targets also remain unresolved until the
-after run is completed. The confidence criterion still needs the notebook to
-save accuracy above and below the explicit 0.80 threshold; I stopped because
-the current results only record confidence by thirds.
+The overall-accuracy and per-label-F1 targets remain missed; I would collect a
+much larger, carefully reviewed `detailed_request` batch and improve the
+request/advice boundary before retraining again. I stopped because the
+available second feed contained only six new posts, not the 30+ needed for a
+meaningful class-size intervention. The confidence criterion still needs the
+notebook to save accuracy above and below the explicit 0.80 threshold; I
+stopped because the current results only record confidence by thirds.
 
 
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
-The labels were intended to separate supported advice from short unsupported
-reactions, but the matrix shows the model learned `brief_reaction` much better
-than the other two labels. Seven real `reasoned_advice` posts were predicted as
-`brief_reaction`, while none went in the reverse direction, showing that the
-model often treated an explanation as a bare reaction.
+The labels were intended to separate detailed requests, supported advice, and
+short unsupported reactions, but both matrices show the model learned
+`brief_reaction` much better than the other two labels. After the change, 9 real
+`reasoned_advice` posts were predicted as `brief_reaction`, while none went in
+the reverse direction and `detailed_request` still had no true positives.
 
 
 
