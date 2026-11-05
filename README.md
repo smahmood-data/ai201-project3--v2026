@@ -368,7 +368,13 @@ to discard supported explanations as short unsupported reactions.
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 30 / 30 = 100%
+
+The set was relatively easy under the written rules: posts 1–10 supplied
+load-bearing checkable facts, posts 11–20 made unsupported general claims, and
+posts 21–30 reported immediate personal experiences. The perfect rate suggests
+the staff set was clearly separated for me, rather than proving that every
+boundary in my own dataset is equally tight.
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
@@ -390,25 +396,32 @@ to discard supported explanations as short unsupported reactions.
      written rule two different ways on 30 posts, that is direct evidence about
      what you did across your own 200. -->
 
+There were no disagreements to adjudicate, so piles (a), (b), and (c) are
+empty for this set.
+
 **1.**
-> *The post:*
+> *The post:* None.
 >
-> *Staff said / I said:*
+> *Staff said / I said:* No disagreement.
 >
-> *My call, and why:*
+> *My call, and why:* All 30 labels matched.
 >
-> *Which pile:*
+> *Which pile:* Not applicable.
 
 **2.**
-> *The post:*
+> *The post:* None.
 >
-> *Staff said / I said:*
+> *Staff said / I said:* No disagreement.
 >
-> *My call, and why:*
+> *My call, and why:* All 30 labels matched.
 >
-> *Which pile:*
+> *Which pile:* Not applicable.
 
 **What the pattern in my disagreements tells me:**
+
+There is no disagreement pattern in this staff set. I should not use the 100%
+rate to claim that the boardgames labels are perfectly consistent, because the
+staff taxonomy and examples were unusually cleanly separated.
 
 
 
