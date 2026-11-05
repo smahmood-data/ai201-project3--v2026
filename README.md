@@ -253,6 +253,11 @@ reviewed against the written taxonomy, but the required 20-post independent
 cold-label pass has not yet been completed; those rows are explicitly marked
 for cold review in `labels.csv`.
 
+AI also helped summarize the before-run matrix, but the diagnosis came from the
+saved metrics: the largest error was `reasoned_advice` being called
+`brief_reaction`. I used that observation to choose the targeted example-addition
+improvement; the AI did not decide the final verdicts.
+
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
      Don't fill these in during unit 5.
@@ -460,16 +465,17 @@ examples in the split. The improvement targets that thin label directly.
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | ≥ 0.65 | pending | pending | pending | Not run |
+| 2. Per-label and macro F1 | Each ≥ 0.55; macro ≥ 0.60 | pending | pending | pending | Not run |
+| 3. Label balance | Each 15%–60% | 18% / 35% / 47% | 18% / 35% / 47% | 18% / 35% / 47% | Met |
+| 4. Staff agreement | ≥ 75% | 1.000 | 1.000 | 1.000 | Met |
+| 5. High-confidence accuracy | ≥ 0.80 and ≥ 0.10 gap | not measured | not measured | not measured | Not measurable |
 
 **Did it help, and how do I know:**
 
-<!-- If it didn't, say so. Relabelling that didn't help is a genuinely
-     interesting result and earns full credit. -->
+The after retraining was not completed in this environment, so I cannot claim
+that the six-post addition helped. The change is committed, but the before/after
+model comparison remains unresolved.
 
 
 
@@ -479,11 +485,25 @@ examples in the split. The improvement targets that thin label directly.
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
 
+The main unresolved problem is the `detailed_request` label. I would collect a
+larger, independently reviewed batch of detailed recommendation requests and
+rerun all three seeds; I stopped after adding the six posts available in the
+provided JSON pages because the remaining posts were duplicates.
+
+The overall-accuracy and per-label-F1 targets also remain unresolved until the
+after run is completed. The confidence criterion still needs the notebook to
+save accuracy above and below the explicit 0.80 threshold; I stopped because
+the current results only record confidence by thirds.
+
 
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
-<!-- Two sentences. Your confusion matrix is the evidence. -->
+The labels were intended to separate supported advice from short unsupported
+reactions, but the matrix shows the model learned `brief_reaction` much better
+than the other two labels. Seven real `reasoned_advice` posts were predicted as
+`brief_reaction`, while none went in the reverse direction, showing that the
+model often treated an explanation as a bare reaction.
 
 
 
