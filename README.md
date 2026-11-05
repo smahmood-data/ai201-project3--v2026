@@ -273,8 +273,10 @@ for cold review in `labels.csv`.
 | F1 — `label_two` |  |  |  |
 
 **What I predicted before I looked:**
-<!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
-     prediction made afterwards isn't one. -->
+
+I predict the trained model will beat the definitions-only baseline overall,
+especially on `detailed_request`, because the fine-tuning data contains many
+community-specific examples of recommendation questions and their boundaries.
 
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added
