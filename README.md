@@ -298,27 +298,35 @@ better-balanced, more consistently reviewed examples.
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | ≥ 0.65 | 0.600 | 0.633 | 0.533 | Missed |
+| 2. Per-label F1 / macro F1 | Each ≥ 0.55; macro ≥ 0.60 | 0.000 / 0.400 | 0.000 / 0.448 | 0.000 / 0.374 | Missed |
+| 3. Label balance | 15%–60% each | 17% / 36% / 47% | 17% / 36% / 47% | 17% / 36% / 47% | Met |
+| 4. Staff agreement | ≥ 75% | — | — | — | Not tested |
+| 5. High-confidence accuracy | ≥ 0.80 and ≥ 0.10 gap | — | — | — | Not recorded here |
+
+Accuracy spread was 0.100 across seeds, right at the ten-point warning line.
+The small `detailed_request` test count (5 posts) makes its score especially
+unstable.
 
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
+| true \ predicted | detailed_request | reasoned_advice | brief_reaction |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **detailed_request** | 0 | 3 | 2 |
+| **reasoned_advice** | 0 | 4 | 7 |
+| **brief_reaction** | 0 | 0 | 14 |
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
+
+Seven real `reasoned_advice` posts were called `brief_reaction`, while no
+`brief_reaction` posts were called `reasoned_advice`. The model therefore tends
+to discard supported explanations as short unsupported reactions.
 
 
 
