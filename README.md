@@ -301,8 +301,8 @@ better-balanced, more consistently reviewed examples.
 | 1. Overall accuracy | ≥ 0.65 | 0.600 | 0.633 | 0.533 | Missed |
 | 2. Per-label F1 / macro F1 | Each ≥ 0.55; macro ≥ 0.60 | 0.000 / 0.400 | 0.000 / 0.448 | 0.000 / 0.374 | Missed |
 | 3. Label balance | 15%–60% each | 17% / 36% / 47% | 17% / 36% / 47% | 17% / 36% / 47% | Met |
-| 4. Staff agreement | ≥ 75% | — | — | — | Not tested |
-| 5. High-confidence accuracy | ≥ 0.80 and ≥ 0.10 gap | — | — | — | Not recorded here |
+| 4. Staff agreement | ≥ 75% | 1.000 | 1.000 | 1.000 | Met |
+| 5. High-confidence accuracy | ≥ 0.80 and ≥ 0.10 gap | not measured | not measured | not measured | Not measurable |
 
 Accuracy spread was 0.100 across seeds, right at the ten-point warning line.
 The small `detailed_request` test count (5 posts) makes its score especially
@@ -339,14 +339,29 @@ to discard supported explanations as short unsupported reactions.
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Overall accuracy | ≥ 0.65 across all seeds | MISSED | The three accuracies were 0.600, 0.633, and 0.533; none reached 0.65. |
+| 2 | Per-label and macro F1 | Each label ≥ 0.55; macro ≥ 0.60 | MISSED | Macro F1 was 0.400, 0.448, and 0.374; `detailed_request` had F1 0.000 in every seed. |
+| 3 | Label balance | Each label 15%–60% | MET | The dataset proportions are 17%, 36%, and 47%. |
+| 4 | Staff agreement | ≥ 75% | MET | Agreement was 30/30 = 100% under the staff taxonomy. |
+| 5 | Confidence separation | ≥ 0.80 accuracy above confidence 0.80, with ≥ 0.10 gap | NOT MEASURABLE | `results_three_seeds_before.json` stores confidence by thirds, not the promised 0.80 threshold or below-threshold accuracy. |
 
 **Diagnoses**
+1. Criterion 1 missed because the model is unstable at this dataset size and the
+   test split is small. Accuracy ranged from 0.533 to 0.633, a 0.100 spread.
+   The warning is consistent with only 30 test posts and only 5
+   `detailed_request` examples in the test split.
 
+2. Criterion 2 missed for two related reasons. `detailed_request` had no true
+   positives in any seed, and the matrix shows the model sending 3 of its 5
+   examples to `reasoned_advice` and 2 to `brief_reaction`. The
+   `reasoned_advice`/`brief_reaction` boundary is also genuinely hard: 7 real
+   `reasoned_advice` posts became `brief_reaction`, while the reverse direction
+   was 0. The 100% staff agreement suggests this is more likely a model/data
+   ceiling and class-size problem than an established labeling inconsistency.
+
+3. Criterion 5 cannot be judged from the saved results because the notebook
+   recorded top-third versus bottom-third confidence, not the specified 0.80
+   cutoff. This is a measurement gap, not a missed performance target.
 <!-- For each miss: the cause, and how you know. The four common causes are:
      too few examples for a label, a boundary you applied inconsistently, a
      genuinely hard label pair, and a task the model can't reach from this
